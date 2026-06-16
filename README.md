@@ -86,7 +86,7 @@ docker images
 :: Push to Docker Hub
 docker push YOUR_DOCKERHUB_USERNAME/flask-app
 
-Program 5
+Program 4
 
 mkdir DockerComposeFile
 cd DockerComposeFile
@@ -115,6 +115,13 @@ services:
 
   database:
     image: redis
+
+Program 5
+donwload jenkins and configure
+exist?
+sc stop jenkins
+remove from ProgramFiles and ProgramData
+
 	
 Program 6
 Download Jenkins (.msi) file
