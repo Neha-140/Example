@@ -16,7 +16,75 @@ git push -u origin main
 git pull origin main
 
 Program 3
+:: Verify Docker
+docker --version
+docker info
 
+:: Pull Ubuntu image
+docker pull ubuntu
+
+:: Check images
+docker images
+
+:: Run Ubuntu container
+docker run -it ubuntu
+
+:: INSIDE THE CONTAINER RUN:
+cat /etc/os-release
+exit
+
+:: Back in Windows terminal
+docker ps
+docker ps -a
+
+:: Remove the stopped Ubuntu container (replace with actual container ID)
+docker rm <container_id>
+
+:: View images
+docker images
+
+:: Create project folder
+mkdir flask-docker-app
+cd flask-docker-app
+
+:: Create app.py
+notepad app.py
+
+:: Create requirements.txt
+notepad requirements.txt
+
+:: Create Dockerfile
+notepad Dockerfile
+
+:: Verify files
+dir
+
+:: Build Docker image
+docker build -t flask-app .
+
+:: Verify image
+docker images
+
+:: Run Flask container
+docker run -d -p 5000:5000 flask-app
+
+:: Verify container is running
+docker ps
+
+:: Open in browser
+http://localhost:5000
+
+:: Login to Docker Hub
+docker login
+
+:: Tag image
+docker tag flask-app YOUR_DOCKERHUB_USERNAME/flask-app
+
+:: Verify tag
+docker images
+
+:: Push to Docker Hub
+docker push YOUR_DOCKERHUB_USERNAME/flask-app
 
 Program 6
 Download Jenkins (.msi) file
