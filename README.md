@@ -72,3 +72,26 @@ node {
     }
 }
 
+
+node {
+
+    stage('Checkout') {
+        git branch: 'main',
+            url: 'https://github.com/Neha-140/Example'
+    }
+
+    stage('SonarQube Analysis') {
+
+        def scannerHome = tool 'SonarScanner'
+
+        withSonarQubeEnv('SonarQube') {
+
+            bat """
+            "${scannerHome}\\bin\\sonar-scanner.bat" ^
+            -Dsonar.projectKey=example ^
+            -Dsonar.projectName=example ^
+            -Dsonar.sources=.
+            """
+        }
+    }
+}
