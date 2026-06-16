@@ -129,6 +129,18 @@ rmdir /s /q src\test
 
 gradle build
 
+gradle run
+change in build.gradle
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'application'
+}
+
+in the end
+application{
+	mainClass= "com.example.App"
+}
 
 
 
