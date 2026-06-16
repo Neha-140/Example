@@ -95,3 +95,15 @@ node {
         }
     }
 }
+Program 7
+donwlooad maven and gradle
+
+Program 8
+mvn --version
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd myapp
+
+mvn clean install
+
