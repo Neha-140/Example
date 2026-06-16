@@ -1,4 +1,24 @@
 # Example
+
+
+
+
+Program 2
+git config --global user.name "Neha Devarasetty"
+git config --global user.email "your-email@example.com"
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/<username>/<repo>.git
+git branch -M main
+git push -u origin main
+git pull origin main
+
+Program 3
+
+
+Program 6
 Download Jenkins (.msi) file
 localhost:8080
 
