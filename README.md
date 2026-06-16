@@ -107,3 +107,32 @@ cd myapp
 
 mvn clean install
 
+Program 9
+mvn archetype:generate -DgroupId=com.example -DartifactId=prog9 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd prog9
+
+mvn clean install
+
+gradle init
+
+Found a Maven build. Generate a Gradle build from this?
+yes
+
+Select build script DSL:
+2 (Groovy)
+
+Generate build using new APIs and behavior?
+no
+
+rmdir /s /q src\test
+
+gradle build
+
+
+
+
+
+
+
+
