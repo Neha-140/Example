@@ -86,6 +86,36 @@ docker images
 :: Push to Docker Hub
 docker push YOUR_DOCKERHUB_USERNAME/flask-app
 
+Program 5
+
+mkdir DockerComposeFile
+cd DockerComposeFile
+
+notepad docker-compose.yml
+
+docker compose config
+
+docker compose up -d
+
+docker ps
+
+:: Open in browser
+http://localhost:9090
+
+docker compose down
+
+docker ps
+
+docker-compose.yml
+services:
+  web:
+    image: nginx
+    ports:
+      - "9090:80"
+
+  database:
+    image: redis
+	
 Program 6
 Download Jenkins (.msi) file
 localhost:8080
